@@ -1,0 +1,46 @@
+.features {
+  padding: 9.6rem 0;
+}
+.heading-secondary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+  text-align: center;
+}
+.features-num {
+  color: ;
+  font-size: 9.8rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.features-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.features-text {
+  font-size: 3.6rem;
+  line-height: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+.features-img {
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 0 25px 5px #e3ab7a;
+}
+.imgg {
+  width: 85%;
+}
+.features-discription {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.features-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

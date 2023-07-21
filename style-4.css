@@ -1,0 +1,51 @@
+.center-text {
+  text-align: center;
+}
+.feedback-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 9.6rem;
+}
+
+.feedback-container {
+  padding: 6rem 3rem;
+}
+.feedbacks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
+  row-gap: 4.8rem;
+}
+.feedbackers-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+.feedback-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.feedbackers-name {
+  font-size: 1.6rem;
+  color: #777;
+}
+.feedbacks-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  height: fit-content;
+  padding: 1.6rem;
+}
+.gallery-item {
+  overflow: hidden;
+}
+.stock-images {
+  display: block;
+  width: 100%;
+  transition: all 0.5s;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+.stock-images:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,75 @@
+.pricing-section {
+  background-color: #f6efea;
+  padding: 9.6rem 0;
+}
+.pricing-plan {
+  border-radius: 11px;
+  padding: 4.8rem;
+
+  position: relative;
+  border: 3px solid #f8d4b4;
+}
+.plan-1 {
+  width: 75%;
+  justify-self: end;
+}
+.plan-2 {
+  background-color: #fff;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.3);
+  width: 75%;
+  overflow: hidden;
+}
+.pricing-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 7.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-time {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #6c6a6a;
+}
+.list {
+  color: #595757;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+.plan-btn {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.tag {
+  position: absolute;
+  top: 5%;
+  right: -12%;
+  text-transform: uppercase;
+
+  background-color: #f9cd2b;
+
+  color: #333;
+  padding: 1.2rem 5rem;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  transform: rotate(45deg);
+}
