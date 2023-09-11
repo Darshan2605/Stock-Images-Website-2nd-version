@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style-4.css" />
     <link rel="stylesheet" href="style-5.css" />
     <link rel="stylesheet" href="style-6.css" />
+    <link rel="stylesheet" href="style-7.css" />
+    <link rel="stylesheet" href="query.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +23,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <title>Royalpic</title>
   </head>
 
@@ -36,6 +46,11 @@
           <li><a href="#" class="main-nav-link special-link">Section 5</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-menu">
+        <ion-icon class="btn-names" name="menu-outline"></ion-icon>
+        <ion-icon class="btn-names" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -78,7 +93,7 @@
           <h2 class="heading-secondary">Features of Royalpic</h2>
         </div>
         <div class="container grid grid-2cols">
-          <div class="features-text-box">
+          <div class="features-text-box item1">
             <p class="features-num">01</p>
             <h3 class="features-text">Royalty Free Images</h3>
             <p class="features-discription">
@@ -86,7 +101,7 @@
               use in your next project.
             </p>
           </div>
-          <div class="features-img-box">
+          <div class="features-img-box item2">
             <img
               src="images/features-img/4.jpg"
               alt="images of features"
@@ -94,14 +109,14 @@
             />
           </div>
 
-          <div class="features-img-box">
+          <div class="features-img-box item3">
             <img
               src="images/features-img/2.jpg"
               alt="images of features"
               class="features-img"
             />
           </div>
-          <div class="features-text-box">
+          <div class="features-text-box item4">
             <p class="features-num">02</p>
             <h3 class="features-text">High-quality Images</h3>
             <p class="features-discription">
@@ -111,7 +126,7 @@
             </p>
           </div>
 
-          <div class="features-text-box">
+          <div class="features-text-box item5">
             <p class="features-num">03</p>
             <h3 class="features-text">Variety of Images</h3>
             <p class="features-discription">
@@ -120,7 +135,7 @@
               image for your project.
             </p>
           </div>
-          <div class="features-img-box">
+          <div class="features-img-box item6">
             <img
               src="images/features-img/3.jpg"
               alt="images of features"
@@ -561,6 +576,50 @@
             <div class="tag">
               <p class="offer-tag">Best Offer</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback-form">
+        <div class="container">
+          <div class="form">
+            <div class="form-text">
+              <h2 class="heading-secondary">Feedback</h2>
+              <form class="actual-form" action="#">
+                <div>
+                  <label for="Text-User">Name</label>
+                  <input
+                    type="text"
+                    name="Text"
+                    id="Text-User"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="Email-text">Email</label>
+                  <input
+                    type="email"
+                    name="Email"
+                    id="Email-text"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <div>
+                  <label for="Feedback-text">Feedback</label>
+                  <input
+                    type="text"
+                    name="Feedback"
+                    id="Feedback-text"
+                    placeholder="Write Feedback"
+                  />
+                </div>
+                <button class="btn-feedback">Submit</button>
+              </form>
+            </div>
+            <div class="form-img" role="img" aria-label="Form image"></div>
           </div>
         </div>
       </section>

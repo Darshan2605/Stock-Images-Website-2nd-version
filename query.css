@@ -1,0 +1,282 @@
+@media (max-width: 71em) {
+  .hero {
+    max-width: 110rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .feedbacks-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem;
+  }
+  .hero {
+    gap: 7.2rem;
+  }
+  .main-nav-list {
+    gap: 4rem;
+  }
+  .feedbacks {
+    row-gap: 10rem;
+    column-gap: 14rem;
+  }
+}
+
+@media (max-width: 68em) {
+  /*original html font size is 62.5%(10PX=1REM).
+  Now lets change it to 9px.
+  9px/16px=0.5625em=56.25%*/
+
+  html {
+    font-size: 56.25%;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+  .feedbacks {
+    row-gap: 15rem;
+    column-gap: 14rem;
+  }
+}
+
+@media (max-width: 61em) {
+  /*8px/16px=0.5em=50%*/
+
+  html {
+    font-size: 50%;
+  }
+  .grid-store {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+  }
+
+  .form {
+    height: 55rem;
+  }
+}
+
+@media (max-width: 55.31em) {
+  .feedbacks-gallery {
+    padding: 3rem;
+  }
+  .feedbacks {
+    row-gap: 15rem;
+    column-gap: 10rem;
+  }
+
+  .tag {
+    right: -18%;
+  }
+}
+
+@media (max-width: 50em) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+  .total-users {
+    justify-content: center;
+  }
+  .main-nav {
+    width: 58%;
+  }
+  .main-nav-link:visited,
+  .main-nav-link:link {
+    font-size: 1.45rem;
+  }
+  .logo {
+    height: 4.5rem;
+  }
+  .header {
+    padding: 0 2.8rem;
+  }
+  .grid-store {
+    gap: 3rem;
+  }
+  .feedbacks-gallery {
+    padding: 1rem;
+  }
+  .feedbacks {
+    row-gap: 9rem;
+  }
+}
+
+@media (max-width: 47.7em) {
+  html {
+    font-size: 48%;
+  }
+}
+@media (max-width: 46em) {
+  .feedback-section {
+    grid-template-columns: 1fr;
+  }
+  .feedbacks-gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .footer .grid {
+    gap: 4rem;
+  }
+  .pricing-section .grid {
+    gap: 5rem;
+  }
+  .form {
+    grid-template-columns: 3fr 2fr;
+  }
+  .btn-mobile-menu {
+    display: block;
+  }
+  .main-nav {
+    background-color: rgba(247, 201, 144, 0.919);
+    position: absolute; /*Releative to header*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /*100% Height of viewport*/
+    transform: translateX(100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    /*display: none can not animated so we use opacity*/
+
+    /*Hide it visually*/
+    /*This navigation box always present on screen(int this range of screen width) but opacity is 0.Therefore we cant see it*/
+    opacity: 0;
+    /*make it unaccessible to mouse and keyboard*/
+    pointer-events: none;
+    /*Hide it from mobile screen readers*/
+    visibility: hidden;
+  }
+  .btn-names[name="menu-outline"] {
+    display: block;
+  }
+
+  /*When we click on menu navigation(calling .nav-open)*/
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  /*When we click on menu navigation(calling .nav-open)*/
+  /*Our close menu text should visible*/
+  .nav-open .btn-names[name="close-outline"] {
+    display: block;
+  }
+  /*and menu text should gone*/
+  .nav-open .btn-names[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .main-nav-link:visited,
+  .main-nav-link:link {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 42.57em) {
+  .features .grid {
+    gap: 3rem;
+  }
+
+  .tag {
+    right: -23%;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 38.18em) {
+  .grid-store {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9rem;
+  }
+  .attributes,
+  .gallery-img-title {
+    font-size: 2.3rem;
+  }
+
+  .pricing-section .grid-2cols {
+    grid-template-columns: 1fr;
+  }
+  .pricing-section .grid {
+    gap: 5rem;
+  }
+  .plan-1,
+  .plan-2 {
+    width: 80%;
+    justify-self: center;
+  }
+  .tag {
+    right: -15%;
+    font-size: 2.2rem;
+    padding: 2rem 9rem;
+  }
+  .features .grid {
+    grid-template-columns: 1fr;
+  }
+  .features-text-box {
+    text-align: center;
+  }
+  .item1 {
+    order: 1;
+  }
+  .item2 {
+    order: 2;
+  }
+  .item4 {
+    order: 3;
+  }
+  .item3 {
+    order: 4;
+  }
+  .item5 {
+    order: 5;
+  }
+  .item6 {
+    order: 6;
+  }
+  .feedbacks-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer .grid {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+  .logos {
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media (max-width: 34.38em) {
+  .hero {
+    padding: 0 3rem;
+  }
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .grid-store {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    width: 70%;
+  }
+  .feedback-form .form {
+    grid-template-columns: 1fr;
+    height: 100rem;
+  }
+  .form-img {
+    height: 45rem;
+    grid-row: 1;
+  }
+}

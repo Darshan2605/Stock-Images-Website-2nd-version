@@ -51,7 +51,9 @@
   font-size: 1.8rem;
 }
 .button {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .download-button {
   background-color: #fc8823;
@@ -62,8 +64,8 @@
   border-radius: 3rem;
   border: none;
   cursor: pointer;
-  margin-top: 1.2rem;
-  position: relative;
+  margin-top: 2rem;
+
   left: 40%;
 }
 
