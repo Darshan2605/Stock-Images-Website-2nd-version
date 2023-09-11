@@ -13,6 +13,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   /*All elements who are overflowing viewport in x direction get hide.(navigation box of menu)*/
 }
 body {
@@ -21,6 +22,7 @@ body {
   line-height: 1;
   color: #555;
   overflow-x: hidden;
+
   /*All elements who are overflowing viewport in x direction get hide.(navigation box of menu)*/
 }
 .header {
@@ -31,9 +33,9 @@ body {
   height: 9.6rem;
   padding: 0 4.8rem;
   position: relative; /*For navigation box menu(main-nav)*/
+  border-bottom: 0.4rem solid #cf680e;
 }
-header {
-}
+
 .logo {
   height: 5.4rem;
 }
@@ -77,16 +79,28 @@ header {
   border: 3px solid #894103;
 }
 .btn-names {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .btn-names[name="close-outline"] {
   display: none;
 }
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  height: 8rem;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .section-hero {
   background-color: #fdecde;
   padding: 4.8rem 0 9.6rem 0;
+  margin-top: 8rem;
 }
 
 /*Media queries*/
