@@ -12,6 +12,7 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
   /*All elements who are overflowing viewport in x direction get hide.(navigation box of menu)*/
 }
 body {
